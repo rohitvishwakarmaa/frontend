@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sai - tour and travels</title>
+  </head>
+  <body>
+    
+    <nav class="navbar hnav">
+      <ul class="navlist vclass">
+        <div class="logo">
+          <img src="img/car.jpg" height="50px" width="50px" alt="logo" />
+        </div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about us">About us</a></li>
+        <li><a href="#contact us">Contact us</a></li>
+        <li><a href="#more">More</a></li>
+      </ul>
+      <div class="rightnav vclass">
+<a href="login.html">
+  <button class="btn login">login</button>
+</a>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+
+    <section class="background firstsection">
+
+      <div class="mainbox">
+
+        <div class="firsthalf">
+          <div class="button">
+            <button class="btn">Place order</button>
+            <button class="btn" id="btn2">Payment</button>
+          </div>
+
+          <div>
+              <p class="textbig">SAI TRAVELS PROVIDE YOU TOURS AT FREE OF COST</p>
+          </div>
+         
+        </div>
+          
+        <div class="secondhalf">
+          <img class="img1" src=https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 alt="img"  >
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer class="foot">
+      <a href="#">Contact</a>
+      <a href="#">about us</a>
+      <a href="#">history</a>
+      <a href="#">Review</a>
+      <a href="#">25DinMaiPaisaDouble</a>
+      <a href="#">home</a>
+
+
+    </footer>
+    <style>
+        *{
+ margin: 0;
+ padding: 0; 
+}
+.navbar{
+height: 59px;
+
+display: flex;
+top: 0;
+background-color: rgb(136, 231, 248);
+border: 1px solid black;
+border-radius: 1px;
+
+}
+
+.navlist{
+  display: flex;
+width: 50%;
+align-items: center;
+}
+
+.navlist li{
+  list-style: none;
+
+}
+
+.navlist li a{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  padding: 25px;
+  font-size: 20px;
+  color: rgb(160, 17, 227);
+}
+.rightnav{
+  display: flex;
+  width: 50%;
+  justify-content: right;
+}
+.logo img{size: 2%;
+border: 5px solid black;
+border-radius: 50%;
+}
+.login{
+  padding: 10px;
+  margin: 10px;
+}
+.mainbox{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(2, 33, 33);
+  display: flex;
+  flex-direction: column-reverse ;
+  justify-content: center;
+  align-items: center ;
+  justify-content: space-evenly;
+  height:400px;
+  max-width: auto;
+  margin: auto;
+
+}
+
+.background {
+
+}
+.btn.login:hover{
+  background-color:plum;
+}
+
+.firsthalf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  justify-content:space-evenly;
+  height: 100px;
+
+  width: 80%;
+  color: white;
+  font-size: 25px;
+}
+
+.Secondhalf{
+  width: 30%;
+
+}
+
+.img1{
+  float: left;
+  height: 200px;
+  width: 200px;
+  border: 10px solid rgb(241, 231, 231);
+  border-radius: 100%;
+}
+
+.btn{
+  background-color: rgb(56, 149, 214);
+  color: rgb(205, 243, 243);
+  padding: 10px;
+  border-radius: 25%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#btn2{
+  padding: 10px 15px 10px 15px;
+}
+.foot{
+  
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+
+}
+.foot a{
+  color: antiquewhite;
+}
+body{
+  background: url(https://static.dezeen.com/uploads/2021/10/xpeng-ht-aero-flying-car-technology_dezeen_2364_sq.jpg);
+background-size: cover;
+background-blend-mode: darken;
+background-repeat: no-repeat;
+height: 200vh;
+}
+
+@media only screen and (max-width:1066px){
+  .navlist{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar{
+    position: relative;
+    background: none;
+    transition:all 0.7s ease-out;
+    /*background-color:transparent;*/
+    
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+.hnav{
+  height: 17%;
+}
+  
+  .navlist{
+    transition: all s ease-out;
+  }
+  .rightnav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .burger{
+display: inline;
+position: absolute;
+right: 1%;
+top: 2%;
+cursor: pointer;
+  }
+ .line{
+  background-color: black;
+  width: 17px;
+  height: 5px;
+  margin: 4px 5px;
+} 
+
+ .vclass{
+  opacity: 0;
+
+}}
+@media only screen and (max-width:745px){
+.firsthalf p{
+  font-size: 15px;
+}
+.img1{
+  height: 150px;
+  width: 150px;
+}}
+@media only screen and (max-width:745px){
+  .firsthalf p{
+    font-size: 13px;
+  }
+}
+
+
+
+    </style>
+    <script>
+        burger = document.querySelector('.burger')
+navbar = document.querySelector('.navbar')
+navlist = document.querySelector('.navlist')
+rightnav = document.querySelector('.rightnav')
+
+burger.addEventListener('click' ,()=>{
+    rightnav.classList.toggle('vclass');
+    navlist.classList.toggle('vclass');
+})
+    </script>
+  </body>
+</html>
